@@ -1,0 +1,43 @@
+{
+    "name": "casino-api-client",
+    "version": "0.1.0",
+    "description": "Gutenberg block that displays casino cards from a REST API.",
+    "author": "Vladimir Radenković",
+    "license": "GPL-2.0-or-later",
+    "keywords": [
+        "casino",
+        "gutenberg",
+        "wordpress"
+    ],
+    "homepage": "https://github.com/VRadenkovic/casino-api-client#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/VRadenkovic/casino-api-client.git"
+    },
+    "bugs": {
+        "url": "https://github.com/VRadenkovic/casino-api-client/issues"
+    },
+    "private": true,
+    "engines": {
+        "node": ">=18.12 <19",
+        "npm": ">=9"
+    },
+    "devDependencies": {
+        "@wordpress/scripts": "30.27.0",
+        "sass": "1.80.7",
+        "typescript": "5.3.3"
+    },
+    "overrides": {
+        "@wordpress/stylelint-config": "23.10.0",
+        "stylelint": "16.8.2",
+        "jest-dev-server": {
+            "wait-on": "8.0.1"
+        }
+    },
+    "scripts": {
+        "build": "wp-scripts build --webpack-copy-php",
+        "start": "wp-scripts start --webpack-copy-php",
+        "lint:css": "wp-scripts lint-style",
+        "lint:js": "wp-scripts lint-js"
+    }
+}

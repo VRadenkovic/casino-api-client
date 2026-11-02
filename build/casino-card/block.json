@@ -1,0 +1,32 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "casino-api-client/casino-card",
+  "version": "0.1.0",
+  "title": "Casino Card",
+  "category": "widgets",
+  "icon": "money-alt",
+  "description": "Displays a casino from the configured API.",
+  "keywords": [
+    "casino",
+    "affiliate"
+  ],
+  "textdomain": "casino-api-client",
+  "attributes": {
+    "casinoId": {
+      "type": "string",
+      "default": ""
+    },
+    "affiliateLink": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "supports": {
+    "html": false
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "render": "file:./render.php"
+}

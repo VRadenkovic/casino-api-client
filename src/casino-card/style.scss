@@ -1,0 +1,97 @@
+.casino-api-card {
+	box-sizing: border-box;
+	max-width: 500px;
+	margin: 1rem auto;
+	padding: 1.5rem;
+	border-radius: 8px;
+	background: #fff;
+	color: #000;
+
+	&__logo {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 181px;
+		margin-bottom: 1.5rem;
+		padding: 1rem;
+		border-radius: 8px;
+		background: #000;
+
+		img {
+			max-width: 100%;
+			height: auto;
+		}
+	}
+
+	&__stats {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		column-gap: 46px;
+		margin: 0;
+	}
+
+	&__stat {
+		position: relative;
+		padding-left: 19px;
+
+		&::before {
+			content: "";
+			position: absolute;
+			top: 1px;
+			left: 0;
+			width: 15px;
+			height: 15px;
+		}
+
+		&--rtp::before {
+			background-image: url(./icons/percentage.svg);
+		}
+
+		&--biggest-win::before {
+			background-image: url(./icons/euro.svg);
+		}
+
+		&--delay::before {
+			background-image: url(./icons/clock.svg);
+		}
+
+		&--limit::before {
+			background-image: url(./icons/return.svg);
+		}
+
+		&--validated::before {
+			background-image: url(./icons/check.svg);
+		}
+
+		&--count::before {
+			background-image: url(./icons/download.svg);
+		}
+
+		dt {
+			font-size: 12px;
+			font-weight: 400;
+			line-height: 17px;
+		}
+
+		dd {
+			margin: 0;
+			font-size: 18px;
+			font-weight: 700;
+			line-height: 27px;
+		}
+	}
+
+	&__cta {
+		display: block;
+		margin-top: 1.5rem;
+		padding: 10px;
+		border-radius: 10px;
+		background: #287e29;
+		color: #fff;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 22px;
+		text-align: center;
+		text-decoration: none;
+	}
+}
